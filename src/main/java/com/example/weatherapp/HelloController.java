@@ -20,6 +20,10 @@ public class HelloController {
         tabPane1.getTabs().add(tab);
 
         WeatherManager manager = new WeatherManager();
-        Forecast forecast = manager.GetForecast();
+        try{
+            Forecast forecast = manager.GetForecast();
+        } catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
