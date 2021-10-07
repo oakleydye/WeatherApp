@@ -22,6 +22,7 @@ public class HelloController {
         WeatherManager manager = new WeatherManager();
         try{
             Forecast forecast = manager.GetForecast();
+            System.out.println(forecast);
         } catch (Exception ex){
             ex.printStackTrace();
         }

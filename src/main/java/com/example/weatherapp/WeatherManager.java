@@ -34,6 +34,7 @@ public class WeatherManager {
     public Forecast GetForecast(){
         Gson gson = new Gson();
         String json = GetForecastString();
+        System.out.print(json);
         if (!json.equals(""))
             return gson.fromJson(json, Forecast.class);
         else

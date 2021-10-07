@@ -1,5 +1,7 @@
 package com.example.weatherapp.BOL;
 
+import java.util.List;
+
 public class ForecastBase {
     public String dt;
     public String pressure;
@@ -13,5 +15,5 @@ public class ForecastBase {
     public String wind_deg;
     public Rain rain;
     public Snow snow;
-    public Weather weather;
+    public List<Weather> weather;
 }
