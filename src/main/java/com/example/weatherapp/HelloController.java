@@ -25,7 +25,6 @@ public class HelloController {
             System.out.println(forecast);
         } catch (Exception ex){
             ex.printStackTrace();
-            ex.getMessage();
         }
     }
 }
